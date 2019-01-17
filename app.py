@@ -8,7 +8,7 @@ This is a temporary script file.
 from flask import Flask, render_template, request
 from random import randint
 
-app = Flask("myApp")
+app = Flask(__name__)
 
 @app.route("/")
 def index():
@@ -56,5 +56,5 @@ def home_confirmation():
     return render_template("confirmation.html", title="Confirmation", **locals())
 
 
-
+if __name__ == '__main__'
 app.run(debug=True)
