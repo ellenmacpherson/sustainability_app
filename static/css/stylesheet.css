@@ -41,6 +41,7 @@ h1 {
   padding-top: 10px;
   margin: 0;
   font-family: 'Rochester', cursive;
+  font-weight: lighter;
 }
 
 h2 {
@@ -67,6 +68,17 @@ main {
 
 #index p {
   color: #EDEBD7;
+  font-size: 58px;
+}
+
+#index a {
+  text-decoration: none;
+  color: #AFDEDC;
+}
+
+#index a:hover {
+  color: #E5B94D;
+  text-decoration: underline;
 }
 
 label {
