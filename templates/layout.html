@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+   <meta charset="utf-8">
+   <title>{{title}} | Flask Experiment</title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/stylesheet.css') }}">
+   <link href="https://fonts.googleapis.com/css?family=Rochester" rel="stylesheet">
+ </head>
+
+ <body id="layout">
+  <header>
+		<h1>{{title}}</h1>
+        <nav>
+          <ul class="menu">
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+          </ul>
+        </nav>
+    </header>
+    {% block content %}
+    {% endblock %}
+ </body>
+</html>
