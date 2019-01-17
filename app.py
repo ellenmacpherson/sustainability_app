@@ -35,11 +35,6 @@ def about():
 def contact():
    return render_template("contact.html")
 
-# @app.route("/signup", methods=["POST"])
-# def sign_up():
-#     form_data = request.form_data
-#     print (form_data["email"])
-#     return "All OK"
 
 @app.route("/confirmation", methods=["POST"])
 def confirmation():
