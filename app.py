@@ -56,5 +56,5 @@ def confirmation():
 #     return render_template("confirmation.html", title="Confirmation", **locals())
 
 
-if __name__ == '__main__'
+if __name__ == '__main__':
     app.run(debug=True)
