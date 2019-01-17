@@ -48,12 +48,12 @@ def confirmation():
     result = "Great! You're on our mailing list."
     return render_template("confirmation.html", title="Confirmation", **locals())
 
-@app.route("/", methods=["POST"])
-def home_confirmation():
-    form_data = request.form
-    email = form_data["email"]
-    result = "Great! You're on our mailing list."
-    return render_template("confirmation.html", title="Confirmation", **locals())
+# @app.route("/", methods=["POST"])
+# def home_confirmation():
+#     form_data = request.form
+#     email = form_data["email"]
+#     result = "Great! You're on our mailing list."
+#     return render_template("confirmation.html", title="Confirmation", **locals())
 
 
 if __name__ == '__main__'
