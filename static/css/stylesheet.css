@@ -1,8 +1,8 @@
 
 html {
   background: linear-gradient(
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.3)),
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)),
     url("../images/recycling.jpg");
   min-height: 100%;
   font-family: Arial;
@@ -13,22 +13,6 @@ html {
   background-repeat: no-repeat;
 }
 
-.menu li {
-  display: inline;
-  padding: 10px 100px;
-  margin: 0 auto;
-}
-
-.menu a {
-  text-decoration: none;
-  color: #AFDEDC;
-}
-
-.menu a:hover {
-  color: #E5B94D;
-  text-decoration: underline;
-
-}
 
 #name_variable {
   /* padding-top: 60px; */
@@ -66,17 +50,19 @@ main {
   margin: 0 auto;
 }
 
-#index p {
-  color: #EDEBD7;
-  font-size: 58px;
-}
-
-#index a {
+a {
   text-decoration: none;
-  color: #AFDEDC;
+  color: #EDEBD7;
+  font-size: 42px;
+  max-width: 70%;
 }
 
-#index a:hover {
+p {
+  color: #AFDEDC;
+  font-size: 30px;
+}
+
+a:hover {
   color: #E5B94D;
   text-decoration: underline;
 }
@@ -126,4 +112,22 @@ footer {
 
 footer p {
   color: black;
+}
+
+.menu li {
+  display: inline;
+  padding: 10px 100px;
+  margin: 0 auto;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #AFDEDC;
+  font-size: 30px;
+}
+
+.menu a:hover {
+  color: #E5B94D;
+  text-decoration: underline;
+
 }

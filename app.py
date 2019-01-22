@@ -12,13 +12,12 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    quotes = ["The greatest threat to our planet is the belief that someone else will save it.",
-    "There is no such thing as ‘away’. When we throw anything away it must go somewhere.",
-    "We cannot solve our problems with the same thinking we used when we created them.",
-    "If it can’t be reduced, reused, repaired, rebuilt, refurbished, refinished, resold, recycled, or composted, then it should be restricted, designed or removed from production.",
-    "Buy less, choose well.",
-    "We are living on this planet as if we had another one to go to.",
-    "Often when you think you’re at the end of something, you’re at the beginning of something else."]
+    quotes = ["the greatest threat to our planet is the belief that someone else will save it",
+    "there is no such thing as ‘away’. When we throw anything away it must go somewhere",
+    "we cannot solve our problems with the same thinking we used when we created them",
+    "if it can’t be reduced, reused, repaired, rebuilt, refurbished, refinished, resold, recycled, or composted, then it should be restricted, designed or removed from production",
+    "we are living on this planet as if we had another one to go to",
+    "often when you think you’re at the end of something, you’re at the beginning of something else"]
     randomNumber = randint(0, len(quotes)-1)
     quote = quotes[randomNumber]
     return render_template("index.html", random_quote=quote, **locals())
